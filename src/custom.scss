@@ -1,0 +1,78 @@
+@import "bootstrap/scss/bootstrap-utilities";
+// Custom variables______________________________________
+//_______________________________________________________
+
+$custom-card-bg-light: $white;
+$custom-card-bg-dark: $gray-800;
+$custom-card-radius: 0;
+$custom-link-color: $purple-600;
+$custom-nav-link-disabled-color: $gray-300;
+$custom-nav-tabs-link-active-color: $gray-800;
+$custom-card-padding: 1.25rem;
+
+//  Main body
+$body-bg: $light;
+
+//  Card header
+$card-cap-bg: $custom-card-bg-dark;
+$card-inner-border-radius: $custom-card-radius;
+
+//  Card nav
+$card-bg: $custom-card-bg-light;
+$nav-tabs-border-radius: $custom-card-radius;
+$nav-link-color: $custom-link-color;
+$nav-link-hover-color: $custom-link-color;
+$nav-tabs-link-active-border-color: $card-bg;
+$nav-link-disabled-color: $custom-nav-link-disabled-color;
+$nav-tabs-link-hover-border-color: $border-color;
+$nav-tabs-link-active-color: $custom-nav-tabs-link-active-color;
+$nav-link-padding-x: $custom-card-padding;
+$card-spacer-x: $custom-card-padding;
+$list-group-bg: $card-bg;
+$nav-tabs-link-active-bg: $card-bg;
+
+//  Card body
+$card-border-radius: $custom-card-radius;
+
+// Card items
+$list-group-item-padding-x: 0;
+$link-color: $custom-link-color;
+$link-hover-color: $custom-link-color;
+
+// Card footer
+$card-cap-padding-x: $custom-card-padding;
+@import "bootstrap/scss/bootstrap";
+
+
+// Edge case______________________________________
+//_______________________________________________________
+
+// By default .nav-link set the background to none
+// There is no variable to update
+// use of a css selector to customize the bgc
+
+#myTabs .nav-link:not(.active) {
+  background-color: $gray-300;
+}
+
+
+// Custom classes______________________________________
+//_______________________________________________________
+
+.max-width-600 {
+  max-width: 600px;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.spin {
+  transform-origin: center;
+  animation: spin 1s linear infinite;
+}
+
+//_______________________________________________________
+
