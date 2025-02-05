@@ -1,0 +1,63 @@
+@import "bootstrap/scss/bootstrap-utilities";
+
+@mixin nav-pills-variant(
+  $name,
+  $text-color,
+  $bg-color,
+  $text-color-hover,
+  $bg-color-hover,
+  $text-color-active,
+  $bg-color-active,
+  $border-color-active
+) {
+  .nav-pills.#{$name} {
+    .nav-link {
+      color: $text-color;
+      background-color: $bg-color;
+      transition: .3s;
+      border: 2px solid transparent;
+
+      &:hover {
+        color: $text-color-hover;
+        background-color: $bg-color-hover;
+        transition: .3s;
+      }
+
+      &:focus-visible {
+        box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 1);
+        outline: none;
+      }
+
+      &.active {
+        color: $text-color-active;
+        background-color: $bg-color-active;
+        border-color: $border-color-active;
+      }
+
+      &.disabled {
+        color: $gray-500;
+      }
+    }
+  }
+}
+
+@include nav-pills-variant(
+                "tab-primary-dark",
+                $white,
+                $gray-800,
+                $gray-800,
+                rgba(233, 233, 233, 0.8),
+                $gray-800,
+                $white,
+                transparent,
+);
+@include nav-pills-variant(
+                "tab-secondary",
+                $gray-800,
+                $light,
+                $primary,
+                $primary-bg-subtle,
+                $primary,
+                $white,
+                $primary,
+);
