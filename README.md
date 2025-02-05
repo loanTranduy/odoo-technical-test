@@ -107,3 +107,7 @@ My focus here was **maximizing Bootstrap usage**.
 - **Consistency**: Tab variants (primary & secondary) created for better alignment and consistency.
 - **UX**: Non-decorative images adapt to any aspect ratio without breaking the UI and expand appropriately to utilize
   available space
+
+## Variant C : Variants
+
+![After](./assets/variant-c.png)

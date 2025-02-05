@@ -44,7 +44,7 @@
 @include nav-pills-variant(
                 "tab-primary-dark",
                 $white,
-                $gray-800,
+                transparent,
                 $gray-800,
                 rgba(233, 233, 233, 0.8),
                 $gray-800,
@@ -61,3 +61,29 @@
                 $white,
                 $primary,
 );
+
+@mixin card-variant(
+  $name,
+  $bg-color,
+  $bg-hover,
+) {
+  .card.#{$name} {
+    .card-header {
+      background-color: $bg-color;
+    }
+
+    @include nav-pills-variant(
+                    "tab-primary-dark",
+                    $white,
+                    transparent,
+                    $gray-800,
+                    $bg-hover,
+                    $gray-800,
+                    $white,
+                    transparent,
+    );
+  }
+}
+
+@include card-variant('card-primary', $primary, #75ADFF);
+@include card-variant('card-secondary', $secondary, rgba(233, 233, 233, 0.8));
