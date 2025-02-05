@@ -44,17 +44,13 @@ capabilities, implementation skills, and understanding of Odoo's design principl
 └── index.html          # Entry point
 ```
 
-## Task
-
-### Variant A : Replicate
+## Variant A : Replicate
 
 | Base                         | Variant A                        |
 |------------------------------|----------------------------------|
 | ![Before](./assets/base.png) | ![After](./assets/variant-a.png) |
 
 ### Side-by-side differences:
-
-### What Changed?
 
 Card Header:
 
@@ -84,7 +80,7 @@ Card Footer:
 - **Padding & Font Sizes**: I adhered to Bootstrap’s utility classes (e.g., .card-body) instead of modifying values that
   weren’t explicitly provided. Customization was applied only to clearly specified values like 600px, 20px, and 50%.
 
-## Development Process & Considerations
+### Development Process & Considerations
 
 My usual approach is to:
 
@@ -97,3 +93,17 @@ If I had received this task at **Odoo**, I would have reached out to the assigne
 behavior, and any missing details.
 
 My focus here was **maximizing Bootstrap usage**.
+
+## Variant B : Improve
+
+| Variant A                        | Variant B                        |
+|----------------------------------|----------------------------------|
+| ![After](./assets/variant-a.png) | ![After](./assets/variant-b.png) |
+
+### 📈 Improvements:
+
+- **Scalability**: Tabs in header and Tab 1 body can have a long label and unlimited amount without breaking the UI
+- **Accessibility**: Enhance hover, focus, and active states for improved clarity and better accessibility
+- **Consistency**: Tab variants (primary & secondary) created for better alignment and consistency.
+- **UX**: Non-decorative images adapt to any aspect ratio without breaking the UI and expand appropriately to utilize
+  available space
