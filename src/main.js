@@ -6,8 +6,8 @@ document.querySelector('#app').innerHTML = `
 <div class="d-flex justify-content-between flex-column min-vh-100">
   <div class="container pt-5">
     <h1 class="text-center mb-5">Variant C</h1>
-    <div class="row g-5">
-      <div class="col-md-4">
+    <div class="row g-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card max-width-600 mx-auto">
           <!-- Card nav -->
           <div class="card-header">
@@ -148,7 +148,7 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card card-primary max-width-600 mx-auto">
           <!-- Card nav -->
           <div class="card-header">
@@ -290,7 +290,7 @@ document.querySelector('#app').innerHTML = `
           </div>
         </div>
       </div>
-      <div class="col-md-4">
+      <div class="col-md-6 col-lg-4">
         <div class="card card-secondary max-width-600 mx-auto">
           <!-- Card nav -->
           <div class="card-header">
